@@ -45,14 +45,15 @@ body {
 .convivaButtonContainer {
     text-align: right;
 }
-.convivaSearchInput {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-}
+
 .convivaSearch {
     width: 272px;
     height: 25px;
+    flex: 1;
+    padding: 5px 15px 5px 15px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
 }
 .convivaAIChatBubble{
     display: flex; 
@@ -81,19 +82,13 @@ body {
 }
 
 .convivaSearchInput {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.convivaSearch {
-  flex: 1;
-  padding: 10px 40px 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  font-size: 14px;
-  outline: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
 }
 
 .convivaSearch:focus {
