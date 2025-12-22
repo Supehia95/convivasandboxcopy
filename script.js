@@ -20,6 +20,9 @@ function initEmbeddedMessaging() {
                 scrt2URL: 'https://convivareimagined--partialsb.sandbox.my.salesforce-scrt.com'
             }
         );
+        window.addEventListener('onEmbeddedMessageSent', function (event) {
+            console.log("✅ onEmbeddedMessageSent");
+        });
         window.addEventListener("onEmbeddedMessagingReady", () => {
             console.log("✅ onEmbeddedMessagingReady");
             setTimeout(() => {
