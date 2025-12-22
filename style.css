@@ -82,13 +82,12 @@ body {
 }
 
 .convivaSearchInput {
-    position: relative;
     display: flex;
     align-items: center;
-    width: 100%;
     position: absolute;
     bottom: 20px;
-    width: 100%;
+    left: 20px;
+    width: 280px;
 }
 
 .convivaSearch:focus {
