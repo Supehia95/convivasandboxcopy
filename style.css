@@ -79,3 +79,50 @@ body {
 .embeddedMessagingConversationButtonWrapper .embeddedMessagingConversationButton {
     visibility: hidden;
 }
+
+.convivaSearchInput {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.convivaSearch {
+  flex: 1;
+  padding: 10px 40px 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+}
+
+.convivaSearch:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.convivaSearchBtn {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.convivaSearchIcon {
+  width: 20px;
+  height: 20px;
+  background-image: url('https://supehia95.github.io/convivasandboxcopy/assets/PaperPlaneTilt.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.convivaSearchBtn:hover {
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
