@@ -189,6 +189,9 @@ body {
       .skeleton-chat-line:last-child {
         margin-bottom: 0;
       }
+.hideQuickContainer{
+display:none !important;
+}
 
 .convivaSearchBtn:hover {
   opacity: 0.7;
