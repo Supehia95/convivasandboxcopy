@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+}
+.convivaAIChatWindow {
+    width: 320px;
+    height: 480px;
+    position: absolute;
+    bottom: 0px;
+    right: 29px;
+    border-radius: 9px 9px 0px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.convivaAIChatHeader {
+    padding: 15px 20px;
+    background-color: #6da927;
+    border-radius: 9px 9px 0px 0px;
+}
+.convivaAIChatHeaderMinimizeButton {
+    border: 0px; 
+    background-color: #6da927;
+    float: right;
+    padding-top: 5px;
+    color: #FFFFFF;
+}
+.convivaWelcomeBanner {
+    background-image: url('./assets/convivaBackground.png');
+    background-repeat: no-repeat;
+    height: 140px;
+    padding: 20px;
+    background-size: cover;
+}
+.convivaButton {
+    background-color: #FFFFFF; 
+    border-radius: 3px; 
+    border: 1px solid #9cdc00;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+    margin: 2px; 0px;
+    cursor: pointer;
+}
+.convivaButtonInputContainer{
+    padding: 20px;
+}
+.convivaButtonContainer {
+    text-align: right;
+}
+.convivaSearchInput {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+.convivaSearch {
+    width: 272px;
+    height: 25px;
+}
+.convivaAIChatBubble{
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 15px; 
+    gap: 10px; 
+    position: absolute; 
+    bottom: 10px; 
+    background: linear-gradient(96.06deg, #417D0C 13.45%, #9CDC00 128%), #9CDC00; 
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06); 
+    border-radius: 8px; 
+    right: 32px;
+}
+.hideContainer {
+    display: none;
+}
+.unhideContainer {
+    display: block;
+}
+
+
+.embeddedMessagingConversationButtonWrapper .embeddedMessagingConversationButton {
+    visibility: hidden;
+}
