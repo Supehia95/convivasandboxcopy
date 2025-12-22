@@ -47,10 +47,9 @@ body {
 }
 
 .convivaSearch {
-    width: 272px;
     height: 25px;
     flex: 1;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 35px 5px 15px;
     border: 1px solid #ccc;
     font-size: 14px;
     outline: none;
@@ -84,10 +83,7 @@ body {
 .convivaSearchInput {
     display: flex;
     align-items: center;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    width: 280px;
+    padding: 0 20px;
 }
 
 .convivaSearch:focus {
@@ -97,7 +93,7 @@ body {
 
 .convivaSearchBtn {
   position: absolute;
-  right: 8px;
+  right: 25px;
   background: none;
   border: none;
   cursor: pointer;
