@@ -23,6 +23,9 @@ function initEmbeddedMessaging() {
         window.addEventListener('onEmbeddedMessageSent', function (event) {
             console.log("✅ onEmbeddedMessageSent");
         });
+          window.addEventListener('onEmbeddedMessagingConversationParticipantChanged', function (event) {
+            console.log("✅ onEmbeddedMessagingConversationParticipantChanged");
+        });
         window.addEventListener("onEmbeddedMessagingReady", () => {
             console.log("✅ onEmbeddedMessagingReady");
             setTimeout(() => {
