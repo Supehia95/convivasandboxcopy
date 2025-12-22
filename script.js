@@ -1,5 +1,9 @@
 let message = '';
 let isChatOpened = false;
+let botloaded = false;
+let botreplied = false;
+let messageSentCount = 0;
+
 document.getElementById("convivaChatInput").addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
         message = e.target.value;
@@ -22,9 +26,14 @@ function initEmbeddedMessaging() {
         );
         window.addEventListener('onEmbeddedMessageSent', function (event) {
             console.log("✅ onEmbeddedMessageSent");
+            messageSentCount++;
+            if(messageSentCount>=2){
+               botreplied = true;
+            }
         });
           window.addEventListener('onEmbeddedMessagingConversationParticipantChanged', function (event) {
             console.log("✅ onEmbeddedMessagingConversationParticipantChanged");
+              botloaded =true;
         });
         window.addEventListener("onEmbeddedMessagingReady", () => {
             console.log("✅ onEmbeddedMessagingReady");
@@ -56,6 +65,10 @@ function initEmbeddedMessaging() {
         });
         window.addEventListener('onEmbeddedMessagingWindowClosed', function (event) {
             isChatOpened = false;
+            botloaded = false;
+            botreplied = false;
+            messageSentCount = 0;
+            
         });
     } catch (err) {
         console.error('Error loading Embedded Messaging: ', err);
